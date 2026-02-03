@@ -2,7 +2,7 @@
     <div class="sticky-header-wrapper">
         <header>
             <div class="container">
-                <h1>🍴 Central <span>Food & Drinks</span></h1>
+                <img src="/images/central-logo.png" alt="Central Food & Drinks - Restaurant and Bar" class="header-logo">
                 <div class="lang-switcher">
                     {{ range .Site.Languages }}
                         <a href="{{ .Lang | relURL }}" class="lang-btn{{ if eq $.Site.Language.Lang .Lang }} active{{ end }}">
@@ -31,7 +31,9 @@
             </div>
             <div class="menu-grid">
                 <div class="menu-category">
+                    {{ if i18n "category_coffee" }} 
                     <h3>{{ i18n "category_coffee" }}</h3>
+                    {{ end }}
                     <div class="menu-items">
                         {{ range .Site.Data.menu.cafetaria.items }}
                             <div class="menu-item">
@@ -394,7 +396,7 @@
             const navItems = document.querySelectorAll('.nav-item');
             
             let current = '';
-            const scrollPosition = window.scrollY + 200;
+            const scrollPosition = window.scrollY + 300;
             
             sections.forEach(section => {
                 const sectionTop = section.offsetTop;

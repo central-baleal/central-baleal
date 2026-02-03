@@ -25,8 +25,8 @@ other = "Comida"
 other = "Petiscos & Especialidades"
 
 # Categories
-[category_coffee]
-other = "Café · Espresso"
+#[category_coffee]
+#other = "Café · Espresso"
 
 [category_appetizers]
 other = "Aperitivos e Digestivos"

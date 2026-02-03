@@ -25,8 +25,8 @@ other = "Food"
 other = "Snacks & Specialties"
 
 # Categories
-[category_coffee]
-other = "Coffee · Espresso"
+#[category_coffee]
+#other = "Coffee · Espresso"
 
 [category_appetizers]
 other = "Appetizers and Digestives"
