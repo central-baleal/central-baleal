@@ -1,0 +1,212 @@
+# Tostas / Toasts
+[[toasts]]
+id = "toast"
+price = "2,50 €"
+
+[toasts.name]
+pt = "Torrada"
+en = "Toast"
+
+[[toasts]]
+id = "cheese_bacon_toast"
+price = "6,00 €"
+
+[toasts.name]
+pt = "Tosta de Queijo & Bacon"
+en = "Cheese and Bacon Toast"
+
+[toasts.description]
+pt = "Queijo e Bacon"
+en = "Cheese and Bacon"
+
+[[toasts]]
+id = "mixed_toast"
+price = "5,50 €"
+
+[toasts.name]
+pt = "Tosta Mista"
+en = "Mixed Toast"
+
+[toasts.description]
+pt = "Queijo e Fiambre"
+en = "Cheese and Ham"
+
+[[toasts]]
+id = "tuna_toast"
+price = "8,00 €"
+
+[toasts.name]
+pt = "Tosta de Atum"
+en = "Tuna Toast"
+
+[toasts.description]
+pt = "Atum c/ Maionese, Queijo, Tomate e Ovo"
+en = "Tuna with Mayo, Cheese, Tomato and Boiled Egg"
+
+[[toasts]]
+id = "mozzarella_toast"
+price = "7,00 €"
+
+[toasts.name]
+pt = "Tosta de Queijo Mozzarella e Tomate"
+en = "Mozzarella Cheese and Tomato Toast"
+
+[toasts.description]
+pt = "Queijo Mozzarella, Pesto e Tomate"
+en = "Mozzarella Cheese, Pesto and Tomato"
+
+[[toasts]]
+id = "chicken_toast"
+price = "8,00 €"
+
+[toasts.name]
+pt = "Tosta de Frango"
+en = "Chicken Toast"
+
+[toasts.description]
+pt = "Frango c/ Maionese, Queijo, Tomate, Pimento e Ovo"
+en = "Chicken with Mayo, Cheese, Tomato, Capsicum and Boiled Egg"
+
+# Saladas / Salads
+[[salads]]
+id = "tuna_salad"
+price = "9,00 €"
+
+[salads.name]
+pt = "Salada de Atum"
+en = "Tuna Salad"
+
+[salads.description]
+pt = "Alface, Tomate, Cebola Roxa, Atum Natural, Pimento, Pepino, Ovo e Molho Especial"
+en = "Lettuce, Tomato, Red Onion, Natural Tuna, Capsicum, Cucumber, Egg, Special Sauce"
+
+[[salads]]
+id = "chicken_salad"
+price = "9,00 €"
+
+[salads.name]
+pt = "Salada de Frango"
+en = "Chicken Salad"
+
+[salads.description]
+pt = "Alface, Tomate, Cebola Roxa, Frango Desfiado, Pimento, Pepino, Ovo e Molho Especial"
+en = "Lettuce, Tomato, Red Onion, Shredded Chicken, Capsicum, Cucumber, Egg, Special Sauce"
+
+[[salads]]
+id = "shrimp_salad"
+price = "10,00 €"
+
+[salads.name]
+pt = "Salada de Camarão"
+en = "Shrimp Salad"
+
+[salads.description]
+pt = "Alface, Tomate, Cebola Roxa, Maçã, Ananás, Pimento, Ovo e Molho Especial"
+en = "Lettuce, Tomato, Red Onion, Apple, Pineapple, Capsicum, Egg, Special Sauce"
+
+# Hamburgers
+[[hamburgers]]
+id = "cheeseburger"
+price = "10,00 €"
+
+[hamburgers.name]
+pt = "Queijo"
+en = "Cheeseburger"
+
+[hamburgers.description]
+pt = "Alface, Tomate e Queijo"
+en = "Lettuce, Tomato and Cheese"
+
+[[hamburgers]]
+id = "central_burger"
+price = "12,00 €"
+
+[hamburgers.name]
+pt = "Central Burger"
+en = "Central Burger"
+
+[hamburgers.description]
+pt = "Alface, Tomate, Queijo, Picles, Cebola Caramelizada e Bacon"
+en = "Lettuce, Tomato, Cheese, Pickles, Caramelized Onion and Bacon"
+
+[[hamburgers]]
+id = "smash_burger"
+price = "12,00 €"
+
+[hamburgers.name]
+pt = "Smash Burger"
+en = "Smash Burger"
+
+[hamburgers.description]
+pt = "Cebola, Queijo, Molho Barbecue e Picles"
+en = "Onion, Cheese, BBQ Sauce and Pickles"
+
+[[hamburgers]]
+id = "chicken_burger"
+price = "10,00 €"
+
+[hamburgers.name]
+pt = "Hambúrguer de Frango"
+en = "Chicken Burger"
+
+[hamburgers.description]
+pt = "Carne de Frango, Alface, Tomate, Queijo, Molho Especial"
+en = "Chicken Patty, Lettuce, Tomato, Cheese, Special Sauce"
+
+[[hamburgers]]
+id = "vegetarian"
+price = "9,00 €"
+
+[hamburgers.name]
+pt = "Vegetariano"
+en = "Vegetarian"
+
+[hamburgers.description]
+pt = "Alface, Tomate, Picles, Lentilhas e Cenouras"
+en = "Lettuce, Tomato, Pickles, Lentils and Carrots"
+
+# Bowls & Pancakes
+[[bowls]]
+id = "yogurt_bowl"
+price = "9,00 €"
+
+[bowls.name]
+pt = "Bowl de Iogurte Natural"
+en = "Natural Yogurt Bowl"
+
+[bowls.description]
+pt = "Iogurte Natural, Banana, Morango, Kiwi, Granola e Mel"
+en = "Natural Yogurt, Banana, Strawberry, Kiwi, Granola and Honey"
+
+[[bowls]]
+id = "acai_bowl"
+price = "9,00 €"
+
+[bowls.name]
+pt = "Bowl de Açaí"
+en = "Açaí Bowl"
+
+[bowls.description]
+pt = "Banana, Morango, Kiwi e Granola"
+en = "Banana, Strawberry, Kiwi and Granola"
+
+[[bowls]]
+id = "pancakes"
+price = "6,00 €"
+
+[bowls.name]
+pt = "Panquecas"
+en = "Pancakes"
+
+[bowls.description]
+pt = "Com Banana/Morango/Kiwi · Topping Chocolate/Caramelo/Mel"
+en = "With Banana/Strawberry/Kiwi · Chocolate/Caramel/Honey Topping"
+
+# Acompanhamentos / Sides
+[[sides]]
+id = "fries"
+price = "5,00 €"
+
+[sides.name]
+pt = "Batata Frita"
+en = "French Fries"

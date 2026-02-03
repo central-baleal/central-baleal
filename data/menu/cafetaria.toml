@@ -1,0 +1,91 @@
+[[items]]
+id = "espresso"
+price = "1,30 €"
+
+[items.name]
+pt = "Café"
+en = "Espresso"
+
+[items.description]
+pt = "Espresso"
+en = ""
+
+[[items]]
+id = "decaf"
+price = "1,30 €"
+
+[items.name]
+pt = "Descafeinado"
+en = "Decaffeinated"
+
+[[items]]
+id = "coffee_milk_small"
+price = "2,00 €"
+
+[items.name]
+pt = "Meia de Leite - Pequena"
+en = "Coffee with Milk - Small"
+
+[[items]]
+id = "coffee_milk_large"
+price = "2,70 €"
+
+[items.name]
+pt = "Meia de Leite - Grande"
+en = "Coffee with Milk - Large"
+
+[[items]]
+id = "cappuccino"
+price = "2,50 €"
+
+[items.name]
+pt = "Cappuccino"
+en = "Cappuccino"
+
+[[items]]
+id = "ucal"
+price = "2,00 €"
+
+[items.name]
+pt = "Ucal"
+en = "Milk with Chocolate"
+
+[[items]]
+id = "iced_coffee"
+price = "2,70 €"
+
+[items.name]
+pt = "Iced Coffee"
+en = "Iced Coffee"
+
+[[items]]
+id = "american"
+price = "1,50 €"
+
+[items.name]
+pt = "Abatanado"
+en = "American Coffee"
+
+[[items]]
+id = "hot_chocolate"
+price = "2,20 €"
+
+[items.name]
+pt = "Chocolate Quente"
+en = "Hot Chocolate"
+
+[[items]]
+id = "house_tea"
+price = "1,50 €"
+
+[items.name]
+pt = "Chá da Casa"
+en = "House Tea"
+
+[[items]]
+id = "tea"
+price = "1,20 €"
+
+[items.name]
+pt = "Chá"
+en = "Tea"

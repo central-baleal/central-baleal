@@ -1,0 +1,85 @@
+# Navigation
+[nav_cafetaria]
+other = "Cafeteria"
+
+[nav_drinks]
+other = "Drinks"
+
+[nav_food]
+other = "Food"
+
+[nav_snacks]
+other = "Snacks"
+
+# Section headers
+[section_cafetaria]
+other = "Cafeteria"
+
+[section_drinks]
+other = "Drinks & Wines"
+
+[section_food]
+other = "Food"
+
+[section_snacks]
+other = "Snacks & Specialties"
+
+# Categories
+[category_coffee]
+other = "Coffee · Espresso"
+
+[category_appetizers]
+other = "Appetizers and Digestives"
+
+[category_gins]
+other = "Gins & Cocktails"
+
+[category_wines]
+other = "Wines"
+
+[category_soft_drinks]
+other = "Soft Drinks"
+
+[category_beer]
+other = "Beer"
+
+[category_toasts]
+other = "Toasts"
+
+[category_salads]
+other = "Salads"
+
+[category_hamburgers]
+other = "Hamburgers"
+
+[category_bowls]
+other = "Bowls & Pancakes"
+
+[category_sides]
+other = "Sides"
+
+[category_snacks_seafood]
+other = "Snacks"
+
+[category_specialties]
+other = "Specialties"
+
+# Notes
+[note_toasts]
+other = "All toasts have oregano and butter"
+
+[note_burgers]
+other = "All burgers served with fries. Extras: 1,00 € Bacon / Egg"
+
+[note_gins]
+other = "Add Red Bull for 1€"
+
+[time_restriction]
+other = "Not Available from 12H to 15H"
+
+# Footer
+[footer_vat]
+other = "Prices include VAT at the legal rate"
+
+[footer_notice]
+other = "No dish, food product or drink, including cover charge, can be charged if not requested by the customer or if unused"

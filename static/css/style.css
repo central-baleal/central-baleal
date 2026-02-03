@@ -72,6 +72,17 @@ header h1 span {
     cursor: pointer;
     transition: all 0.3s ease;
     font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a.lang-btn {
+    text-decoration: none;
+}
+
+button.lang-btn {
+    font-family: inherit;
+    font-size: inherit;
 }
 
 .lang-btn:hover {

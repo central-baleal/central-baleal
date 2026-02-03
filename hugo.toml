@@ -1,0 +1,25 @@
+baseURL = 'https://example.org/'
+title = 'Central Food & Drinks'
+defaultContentLanguage = 'pt'
+defaultContentLanguageInSubdir = false
+
+[languages]
+  [languages.pt]
+    languageName = 'Português'
+    weight = 1
+    title = 'Central Food & Drinks - Menu'
+    [languages.pt.params]
+      flag = '🇵🇹'
+    
+  [languages.en]
+    languageName = 'English'
+    weight = 2
+    title = 'Central Food & Drinks - Menu'
+    [languages.en.params]
+      flag = '🇬🇧'
+
+[params]
+  description = 'Restaurant menu'
+
+[markup.goldmark.renderer]
+  unsafe = true

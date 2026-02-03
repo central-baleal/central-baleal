@@ -1,0 +1,418 @@
+{{ define "main" }}
+    <header>
+        <div class="container">
+            <h1>🍴 Central <span>Food & Drinks</span></h1>
+            <div class="lang-switcher">
+                {{ range .Site.Languages }}
+                    {{ if eq $.Site.Language.Lang .Lang }}
+                        <button class="lang-btn active">{{ .Params.flag }} {{ .LanguageName }}</button>
+                    {{ else }}
+                        <a href="{{ .Lang | relURL }}" class="lang-btn">{{ .Params.flag }} {{ .LanguageName }}</a>
+                    {{ end }}
+                {{ end }}
+            </div>
+        </div>
+    </header>
+
+    <nav class="menu-nav">
+        <div class="container">
+            <a href="#cafetaria" class="nav-item">☕ <span>{{ i18n "nav_cafetaria" }}</span></a>
+            <a href="#drinks" class="nav-item">🍷 <span>{{ i18n "nav_drinks" }}</span></a>
+            <a href="#food" class="nav-item">🍔 <span>{{ i18n "nav_food" }}</span></a>
+            <a href="#snacks" class="nav-item">🍤 <span>{{ i18n "nav_snacks" }}</span></a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <!-- Cafetaria Section -->
+        <section id="cafetaria" class="menu-section">
+            <div class="section-header">
+                <h2>☕ <span>{{ i18n "section_cafetaria" }}</span></h2>
+            </div>
+            <div class="menu-grid">
+                <div class="menu-category">
+                    <h3>{{ i18n "category_coffee" }}</h3>
+                    <div class="menu-items">
+                        {{ range .Site.Data.menu.cafetaria.items }}
+                            <div class="menu-item">
+                                <div class="item-info">
+                                    <span class="item-name">
+                                        {{ if .name }}
+                                            {{ if reflect.IsMap .name }}
+                                                {{ index .name $.Site.Language.Lang }}
+                                            {{ else }}
+                                                {{ .name }}
+                                            {{ end }}
+                                        {{ end }}
+                                        {{ if .description }}
+                                            {{ if reflect.IsMap .description }}
+                                                {{ with index .description $.Site.Language.Lang }}
+                                                    {{ if . }} · {{ . }}{{ end }}
+                                                {{ end }}
+                                            {{ end }}
+                                        {{ end }}
+                                    </span>
+                                </div>
+                                <span class="item-price">{{ .price }}</span>
+                            </div>
+                        {{ end }}
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Drinks Section -->
+        <section id="drinks" class="menu-section">
+            <div class="section-header">
+                <h2>🍷 <span>{{ i18n "section_drinks" }}</span></h2>
+            </div>
+            
+            <div class="menu-grid">
+                <!-- Appetizers and Digestives -->
+                <div class="menu-category">
+                    <h3>{{ i18n "category_appetizers" }}</h3>
+                    <div class="menu-items">
+                        {{ range .Site.Data.menu.drinks.aperitifs }}
+                            <div class="menu-item">
+                                <span class="item-name">{{ .name }}</span>
+                                <span class="item-price">{{ .price }}</span>
+                            </div>
+                        {{ end }}
+                    </div>
+                </div>
+
+                <!-- Gins -->
+                <div class="menu-category">
+                    <h3>{{ i18n "category_gins" }}</h3>
+                    <div class="menu-items">
+                        {{ range .Site.Data.menu.drinks.gins }}
+                            <div class="menu-item">
+                                <span class="item-name">{{ .name }}</span>
+                                <span class="item-price">{{ .price }}</span>
+                            </div>
+                        {{ end }}
+                    </div>
+                    <p class="category-note">{{ i18n "note_gins" }}</p>
+                </div>
+
+                <!-- Wines -->
+                <div class="menu-category">
+                    <h3>{{ i18n "category_wines" }}</h3>
+                    <div class="menu-items">
+                        {{ range .Site.Data.menu.drinks.wines }}
+                            <div class="menu-item">
+                                <div class="item-info">
+                                    <span class="item-name">
+                                        {{ if .name }}
+                                            {{ if reflect.IsMap .name }}
+                                                {{ index .name $.Site.Language.Lang }}
+                                            {{ else }}
+                                                {{ .name }}
+                                            {{ end }}
+                                        {{ end }}
+                                    </span>
+                                </div>
+                                <span class="item-price">{{ .price }}</span>
+                            </div>
+                        {{ end }}
+                    </div>
+                </div>
+
+                <!-- Soft Drinks -->
+                <div class="menu-category">
+                    <h3>{{ i18n "category_soft_drinks" }}</h3>
+                    <div class="menu-items">
+                        {{ range .Site.Data.menu.drinks.soft_drinks }}
+                            <div class="menu-item">
+                                <span class="item-name">
+                                    {{ if .name }}
+                                        {{ if reflect.IsMap .name }}
+                                            {{ index .name $.Site.Language.Lang }}
+                                        {{ else }}
+                                            {{ .name }}
+                                        {{ end }}
+                                    {{ end }}
+                                </span>
+                                <span class="item-price">{{ .price }}</span>
+                            </div>
+                        {{ end }}
+                    </div>
+                </div>
+
+                <!-- Beer -->
+                <div class="menu-category">
+                    <h3>{{ i18n "category_beer" }}</h3>
+                    <div class="menu-items">
+                        {{ range .Site.Data.menu.drinks.beers }}
+                            <div class="menu-item">
+                                <span class="item-name">
+                                    {{ if .name }}
+                                        {{ if reflect.IsMap .name }}
+                                            {{ index .name $.Site.Language.Lang }}
+                                        {{ else }}
+                                            {{ .name }}
+                                        {{ end }}
+                                    {{ end }}
+                                </span>
+                                <span class="item-price">{{ .price }}</span>
+                            </div>
+                        {{ end }}
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Food Section -->
+        <section id="food" class="menu-section">
+            <div class="section-header">
+                <h2>🍔 <span>{{ i18n "section_food" }}</span></h2>
+            </div>
+            
+            <div class="menu-grid">
+                <!-- Toasts -->
+                <div class="menu-category">
+                    <h3>{{ i18n "category_toasts" }}</h3>
+                    <div class="menu-items">
+                        {{ range .Site.Data.menu.food.toasts }}
+                            <div class="menu-item">
+                                <div class="item-info">
+                                    <span class="item-name">
+                                        {{ if reflect.IsMap .name }}
+                                            {{ index .name $.Site.Language.Lang }}
+                                        {{ else }}
+                                            {{ .name }}
+                                        {{ end }}
+                                    </span>
+                                    {{ if .description }}
+                                        <span class="item-description">
+                                            {{ if reflect.IsMap .description }}
+                                                {{ index .description $.Site.Language.Lang }}
+                                            {{ else }}
+                                                {{ .description }}
+                                            {{ end }}
+                                        </span>
+                                    {{ end }}
+                                </div>
+                                <span class="item-price">{{ .price }}</span>
+                            </div>
+                        {{ end }}
+                    </div>
+                    <p class="category-note">{{ i18n "note_toasts" }}</p>
+                </div>
+
+                <!-- Salads -->
+                <div class="menu-category">
+                    <h3>{{ i18n "category_salads" }}</h3>
+                    <div class="menu-items">
+                        {{ range .Site.Data.menu.food.salads }}
+                            <div class="menu-item">
+                                <div class="item-info">
+                                    <span class="item-name">
+                                        {{ if reflect.IsMap .name }}
+                                            {{ index .name $.Site.Language.Lang }}
+                                        {{ else }}
+                                            {{ .name }}
+                                        {{ end }}
+                                    </span>
+                                    <span class="item-description">
+                                        {{ if reflect.IsMap .description }}
+                                            {{ index .description $.Site.Language.Lang }}
+                                        {{ else }}
+                                            {{ .description }}
+                                        {{ end }}
+                                    </span>
+                                </div>
+                                <span class="item-price">{{ .price }}</span>
+                            </div>
+                        {{ end }}
+                    </div>
+                </div>
+
+                <!-- Hamburgers -->
+                <div class="menu-category">
+                    <h3>{{ i18n "category_hamburgers" }}</h3>
+                    <div class="menu-items">
+                        {{ range .Site.Data.menu.food.hamburgers }}
+                            <div class="menu-item">
+                                <div class="item-info">
+                                    <span class="item-name">
+                                        {{ if reflect.IsMap .name }}
+                                            {{ index .name $.Site.Language.Lang }}
+                                        {{ else }}
+                                            {{ .name }}
+                                        {{ end }}
+                                    </span>
+                                    <span class="item-description">
+                                        {{ if reflect.IsMap .description }}
+                                            {{ index .description $.Site.Language.Lang }}
+                                        {{ else }}
+                                            {{ .description }}
+                                        {{ end }}
+                                    </span>
+                                </div>
+                                <span class="item-price">{{ .price }}</span>
+                            </div>
+                        {{ end }}
+                    </div>
+                    <p class="category-note">{{ i18n "note_burgers" }}</p>
+                </div>
+
+                <!-- Bowls & Pancakes -->
+                <div class="menu-category">
+                    <h3>{{ i18n "category_bowls" }}</h3>
+                    <div class="time-restriction">{{ i18n "time_restriction" }}</div>
+                    <div class="menu-items">
+                        {{ range .Site.Data.menu.food.bowls }}
+                            <div class="menu-item">
+                                <div class="item-info">
+                                    <span class="item-name">
+                                        {{ if reflect.IsMap .name }}
+                                            {{ index .name $.Site.Language.Lang }}
+                                        {{ else }}
+                                            {{ .name }}
+                                        {{ end }}
+                                    </span>
+                                    <span class="item-description">
+                                        {{ if reflect.IsMap .description }}
+                                            {{ index .description $.Site.Language.Lang }}
+                                        {{ else }}
+                                            {{ .description }}
+                                        {{ end }}
+                                    </span>
+                                </div>
+                                <span class="item-price">{{ .price }}</span>
+                            </div>
+                        {{ end }}
+                    </div>
+                </div>
+
+                <!-- Sides -->
+                <div class="menu-category">
+                    <h3>{{ i18n "category_sides" }}</h3>
+                    <div class="menu-items">
+                        {{ range .Site.Data.menu.food.sides }}
+                            <div class="menu-item">
+                                <div class="item-info">
+                                    <span class="item-name">
+                                        {{ if reflect.IsMap .name }}
+                                            {{ index .name $.Site.Language.Lang }}
+                                        {{ else }}
+                                            {{ .name }}
+                                        {{ end }}
+                                    </span>
+                                </div>
+                                <span class="item-price">{{ .price }}</span>
+                            </div>
+                        {{ end }}
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Snacks Section -->
+        <section id="snacks" class="menu-section">
+            <div class="section-header">
+                <h2>🍤 <span>{{ i18n "section_snacks" }}</span></h2>
+            </div>
+            
+            <div class="menu-grid">
+                <!-- Snacks -->
+                <div class="menu-category">
+                    <h3>{{ i18n "category_snacks_seafood" }}</h3>
+                    <div class="menu-items">
+                        {{ range .Site.Data.menu.snacks.snacks }}
+                            <div class="menu-item">
+                                <div class="item-info">
+                                    <span class="item-name">
+                                        {{ if reflect.IsMap .name }}
+                                            {{ index .name $.Site.Language.Lang }}
+                                        {{ else }}
+                                            {{ .name }}
+                                        {{ end }}
+                                    </span>
+                                </div>
+                                <span class="item-price">{{ .price }}</span>
+                            </div>
+                        {{ end }}
+                    </div>
+                </div>
+
+                <!-- Specialties -->
+                <div class="menu-category">
+                    <h3>{{ i18n "category_specialties" }}</h3>
+                    <div class="menu-items">
+                        {{ range .Site.Data.menu.snacks.specialties }}
+                            <div class="menu-item">
+                                <div class="item-info">
+                                    <span class="item-name">
+                                        {{ if reflect.IsMap .name }}
+                                            {{ index .name $.Site.Language.Lang }}
+                                        {{ else }}
+                                            {{ .name }}
+                                        {{ end }}
+                                    </span>
+                                </div>
+                                <span class="item-price">{{ .price }}</span>
+                            </div>
+                        {{ end }}
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>{{ i18n "footer_vat" }}</p>
+            <p>{{ i18n "footer_notice" }}</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll for navigation links
+        document.querySelectorAll('.nav-item').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const targetId = link.getAttribute('href');
+                const targetSection = document.querySelector(targetId);
+                if (targetSection) {
+                    const headerHeight = document.querySelector('header').offsetHeight;
+                    const navHeight = document.querySelector('.menu-nav').offsetHeight;
+                    const totalOffset = headerHeight + navHeight + 20;
+                    
+                    const targetPosition = targetSection.offsetTop - totalOffset;
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Highlight active section in navigation
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('.menu-section');
+            const navItems = document.querySelectorAll('.nav-item');
+            
+            let current = '';
+            const scrollPosition = window.scrollY + 200;
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollPosition >= sectionTop) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navItems.forEach(item => {
+                item.style.background = '';
+                item.style.color = '';
+                if (item.getAttribute('href') === `#${current}`) {
+                    item.style.background = '#e8f5e9';
+                    item.style.color = '#2d5016';
+                }
+            });
+        });
+    </script>
+{{ end }}

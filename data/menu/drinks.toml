@@ -1,0 +1,226 @@
+# Aperitivos e Digestivos / Appetizers and Digestives
+[[aperitifs]]
+id = "ricard"
+price = "3,00 €"
+name = "Ricard"
+
+[[aperitifs]]
+id = "brandy_fino"
+price = "3,00 €"
+name = "Brandy Fino"
+
+[[aperitifs]]
+id = "macieira"
+price = "3,00 €"
+name = "Macieira"
+
+[[aperitifs]]
+id = "moscatel"
+price = "3,00 €"
+name = "Moscatel"
+
+[[aperitifs]]
+id = "brandy_croft"
+price = "3,00 €"
+name = "Brandy Croft"
+
+[[aperitifs]]
+id = "baileys"
+price = "4,50 €"
+name = "Baileys"
+
+[[aperitifs]]
+id = "jameson"
+price = "4,50 €"
+name = "Jameson"
+
+[[aperitifs]]
+id = "glenfiddich"
+price = "7,00 €"
+name = "Glenfiddich"
+
+[[aperitifs]]
+id = "black_label"
+price = "4,50 €"
+name = "Black Label"
+
+# Gins & Cocktails
+[[gins]]
+id = "beefeater_pink"
+price = "8,00 €"
+name = "Beefeater Pink"
+
+[[gins]]
+id = "gin_beefeater"
+price = "7,00 €"
+name = "Gin Beefeater"
+
+[[gins]]
+id = "gin_tanqueray"
+price = "7,50 €"
+name = "Gin Tanqueray"
+
+[[gins]]
+id = "gin_bombay"
+price = "9,50 €"
+name = "Gin Bombay Sapphire"
+
+[[gins]]
+id = "gin_hendricks"
+price = "10,00 €"
+name = "Gin Hendricks"
+
+[[gins]]
+id = "aperol_spritz"
+price = "7,00 €"
+name = "Aperol Spritz"
+
+[[gins]]
+id = "caipirinha"
+price = "7,00 €"
+name = "Caipirinha"
+
+[[gins]]
+id = "mojito"
+price = "8,00 €"
+name = "Mojito"
+
+# Vinhos / Wines
+[[wines]]
+id = "wine_glass"
+price = "5,50 €"
+
+[wines.name]
+pt = "Copo de Vinho"
+en = "Glass of Wine"
+
+[[wines]]
+id = "white_wine"
+price = "9,00 €"
+
+[wines.name]
+pt = "Garrafa Vinho Branco"
+en = "White Wine Bottle"
+
+[[wines]]
+id = "green_wine"
+price = "10,00 €"
+
+[wines.name]
+pt = "Garrafa Vinho Verde"
+en = "Green Wine"
+
+[[wines]]
+id = "rose_wine"
+price = "10,00 €"
+
+[wines.name]
+pt = "Garrafa Vinho Rosé"
+en = "Rosé Wine"
+
+[[wines]]
+id = "sangria_jug"
+price = "11,00 €"
+name = "Sangria Jug · 1L"
+
+[[wines]]
+id = "sangria_glass"
+price = "3,00 €"
+name = "Sangria Glass"
+
+# Refrigerantes / Soft Drinks
+[[soft_drinks]]
+id = "compal"
+price = "2,00 €"
+name = "Compal"
+
+[[soft_drinks]]
+id = "can_juice"
+price = "2,00 €"
+
+[soft_drinks.name]
+pt = "Sumo de Lata"
+en = "Can Juice"
+
+[[soft_drinks]]
+id = "orange_juice"
+price = "4,00 €"
+
+[soft_drinks.name]
+pt = "Sumo Natural Laranja"
+en = "Natural Orange Juice"
+
+[[soft_drinks]]
+id = "water_small"
+price = "1,00 €"
+
+[soft_drinks.name]
+pt = "Água 0.5L"
+en = "Water 0.5L"
+
+[[soft_drinks]]
+id = "water_large"
+price = "2,00 €"
+
+[soft_drinks.name]
+pt = "Água 1.5L"
+en = "Water 1.5L"
+
+[[soft_drinks]]
+id = "sparkling_water"
+price = "1,80 €"
+
+[soft_drinks.name]
+pt = "Água com Gás"
+en = "Sparkling Water"
+
+[[soft_drinks]]
+id = "red_bull"
+price = "3,50 €"
+name = "Red Bull"
+
+# Cervejas / Beer
+[[beers]]
+id = "beer_mini"
+price = "1,80 €"
+
+[beers.name]
+pt = "Cerveja Mini 0.20L"
+en = "Beer 0.20L"
+
+[[beers]]
+id = "beer_medium"
+price = "2,20 €"
+
+[beers.name]
+pt = "Cerveja Media 0.33L"
+en = "Beer 0.33L"
+
+[[beers]]
+id = "beer_no_alcohol"
+price = "2,20 €"
+
+[beers.name]
+pt = "Cerveja Sem Álcool"
+en = "Non-alcoholic Beer"
+
+[[beers]]
+id = "draft_small"
+price = "1,80 €"
+
+[beers.name]
+pt = "Imperial 0.20L"
+en = "Draft Beer 0.20L"
+
+[[beers]]
+id = "draft_large"
+price = "3,80 €"
+
+[beers.name]
+pt = "Caneca 0.50L"
+en = "Draft Beer 0.50L"
+
+[[beers]]
+id = "somersby"
+price = "2,80 €"
+name = "Somersby"

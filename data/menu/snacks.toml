@@ -1,0 +1,65 @@
+# Petiscos / Snacks
+[[snacks]]
+id = "fried_shrimp"
+price = "11,00 €"
+
+[snacks.name]
+pt = "Camarão Frito"
+en = "Fried Shrimp"
+
+[[snacks]]
+id = "octopus_salad"
+price = "13,00 €"
+
+[snacks.name]
+pt = "Salada de Polvo"
+en = "Octopus Salad"
+
+[[snacks]]
+id = "clams"
+price = "13,00 €"
+
+[snacks.name]
+pt = "Amêijoas"
+en = "Clams"
+
+[[snacks]]
+id = "snails"
+price = "6,00 €"
+
+[snacks.name]
+pt = "Caracóis"
+en = "Snails"
+
+# Especialidades / Specialties
+[[specialties]]
+id = "bifana"
+price = "4,00 €"
+
+[specialties.name]
+pt = "Bifana no Pão"
+en = "Pork Steak in Bread"
+
+[[specialties]]
+id = "daily_soup"
+price = "3,50 €"
+
+[specialties.name]
+pt = "Sopa do Dia"
+en = "Daily Soup"
+
+[[specialties]]
+id = "ham_omelet"
+price = "8,50 €"
+
+[specialties.name]
+pt = "Omelete Mista"
+en = "Ham and Cheese Omelet"
+
+[[specialties]]
+id = "shrimp_omelet"
+price = "9,50 €"
+
+[specialties.name]
+pt = "Omelete de Camarão"
+en = "Shrimp Omelet"

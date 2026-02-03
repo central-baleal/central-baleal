@@ -1,0 +1,85 @@
+# Navigation
+[nav_cafetaria]
+other = "Cafetaria"
+
+[nav_drinks]
+other = "Bebidas"
+
+[nav_food]
+other = "Comida"
+
+[nav_snacks]
+other = "Petiscos"
+
+# Section headers
+[section_cafetaria]
+other = "Cafetaria"
+
+[section_drinks]
+other = "Bebidas & Vinhos"
+
+[section_food]
+other = "Comida"
+
+[section_snacks]
+other = "Petiscos & Especialidades"
+
+# Categories
+[category_coffee]
+other = "Café · Espresso"
+
+[category_appetizers]
+other = "Aperitivos e Digestivos"
+
+[category_gins]
+other = "Gins & Cocktails"
+
+[category_wines]
+other = "Vinhos"
+
+[category_soft_drinks]
+other = "Refrigerantes"
+
+[category_beer]
+other = "Cervejas"
+
+[category_toasts]
+other = "Tostas"
+
+[category_salads]
+other = "Saladas"
+
+[category_hamburgers]
+other = "Hamburgers"
+
+[category_bowls]
+other = "Bowls & Pancakes"
+
+[category_sides]
+other = "Acompanhamentos"
+
+[category_snacks_seafood]
+other = "Petiscos"
+
+[category_specialties]
+other = "Especialidades"
+
+# Notes
+[note_toasts]
+other = "Todas as tostas levam orégãos e manteiga"
+
+[note_burgers]
+other = "Hamburguers acompanhados de batata frita. Extras: 1,00 € Bacon / Ovo"
+
+[note_gins]
+other = "Adiciona Red Bull por 1€"
+
+[time_restriction]
+other = "Indisponível das 12H às 15H"
+
+# Footer
+[footer_vat]
+other = "Preços com I.V.A. incluído a taxa legal em vigor"
+
+[footer_notice]
+other = "Nenhum prato, produto alimentar ou bebida, incluindo o couvert, pode ser cobrado se não for solicitado pelo cliente ou por este for inutilizado"
